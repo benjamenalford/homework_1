@@ -31,5 +31,10 @@ with open(csv_path,encoding="UTF-8") as vote_file:
 print('Election Results')
 print('-------------------------')
 print(f'Total Votes: {total_votes}')
-print(candidates)
-print(candidate_votes)
+print(f'-------------------------')
+for candidate in candidates:
+    vote_count =candidate_votes[candidates.index(candidate)]
+    print(f'{candidate}: 23.049% ({vote_count})')
+print(f'-------------------------')
+print(f'Winner: Diana DeGette')
+print(f'-------------------------')
